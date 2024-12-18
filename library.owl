@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:ex="http://example.org#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://example.org#FacultyMember">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org#Member"/>
+    <rdfs:label>Faculty Member</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org#Author">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Author</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org#NonFictionBook">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org#Book"/>
+    <rdfs:label>Non-Fiction Book</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org#Member">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Member</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org#Book">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Book</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org#StudentMember">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org#Member"/>
+    <rdfs:label>Student Member</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org#Genre">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Genre</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org#FictionBook">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org#Book"/>
+    <rdfs:label>Fiction Book</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org#rajandeep">
+    <rdf:type rdf:resource="http://example.org#FacultyMember"/>
+    <ex:hasMemberName>rajandeep</ex:hasMemberName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org#avneet">
+    <rdf:type rdf:resource="http://example.org#StudentMember"/>
+    <ex:hasMemberName>avneet</ex:hasMemberName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org#english">
+    <rdf:type rdf:resource="http://example.org#FictionBook"/>
+    <ex:hasGenre rdf:resource="http://example.org#56"/>
+    <ex:hasBookName>english</ex:hasBookName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org#math">
+    <rdf:type rdf:resource="http://example.org#NonFictionBook"/>
+    <ex:hasGenre rdf:resource="http://example.org#67"/>
+    <ex:hasBookName>math</ex:hasBookName>
+  </rdf:Description>
+</rdf:RDF>
